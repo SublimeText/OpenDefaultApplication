@@ -1,0 +1,10 @@
+[
+    {
+        "caption": "Open in Default Application…",
+        "command": "open_default",
+        "args": {
+            "files": [],
+            "dirs": []
+        }
+    }
+]

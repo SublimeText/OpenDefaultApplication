@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "Open in Default Application…",
+        "command": "open_default_for_current_view"
+    }
+]
