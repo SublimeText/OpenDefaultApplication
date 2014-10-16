@@ -42,7 +42,7 @@ class OpenDefaultCommand(sublime_plugin.WindowCommand):
 
     @property
     def open_command(self):
-        self.settings.get("open_command", None)
+        return self.settings.get("open_command", None)
 
     @property
     def have_open_method(self):
