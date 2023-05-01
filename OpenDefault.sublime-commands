@@ -1,5 +1,14 @@
 [
     {
+        "caption": "Preferences: Open in Default Application Settings",
+        "command": "edit_settings",
+        "args": {
+            "base_file": "${packages}/Open in Default Application/OpenDefault ($platform).sublime-settings",
+            "user_file": "${packages}/User/OpenDefault.sublime-settings",
+            "default": "// Open in Default Application Settings - User\n{\n\t$0\n}\n",
+        }
+    },
+    {
         "caption": "Open in Default Application",
         "command": "open_default_for_current_view"
     }

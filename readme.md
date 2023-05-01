@@ -6,8 +6,7 @@ command palette to open a file or directory in the system default application.
 ## System Notes
 On *Linux*, `xdg-open` is used which most up-to-date desktop distributions
 should provide. If you wish to use a different opening utility, this preference
-can be overridden by creating `OpenDefault (Linux).sublime-settings` in your
-`User` directory:
+can be overridden by editing your settings for this package:
 
     {
         "open_command": "<your opening command>"
