@@ -1,31 +1,20 @@
-from __future__ import print_function
-
 import os
 import shutil
 import subprocess
-import sys
 
 import sublime
 import sublime_plugin
 
 
-if sys.version_info[0] >= 3:
-    str_type = str
-    which = shutil.which
-else:
-    str_type = basestring  # noqa
-    which = lambda x: x
-
-
 def open_with_command(cmd, paths):
-    if isinstance(cmd, str_type):
+    if isinstance(cmd, str):
         args = [cmd]
     elif isinstance(cmd, list):
         args = cmd[:]
     else:
         args = list(cmd)
     if not os.path.isabs(args[0]):
-        args[0] = which(args[0])
+        args[0] = shutil.which(args[0])
 
     for path in paths:
         subprocess.Popen(args + [path])
